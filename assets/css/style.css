@@ -1,12 +1,30 @@
 #button-view{
     margin: 10px;
     padding: 1opx;
+    font-size: 18px;
 }
 .gif{
-    margin: 15px;
+    margin: 12px;
+    padding: 2px 8px;
     background-color: green;
     color: white;
     font-size: 16px;
-    
 
+}
+body{
+    background-image: url("background.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#animal-form{
+    float: right;
+    font-size: 20px;
+    color: white;
+    margin-right: 15px;
+}
+#add-animal{
+    float: right;
+    width: 83px;
+    font-size: 20px;
 }

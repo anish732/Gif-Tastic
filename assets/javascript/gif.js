@@ -3,7 +3,7 @@ var animal =["Cat","Dog","Rabbit","Monkey","Lion","Tiger","Bear","Elephant","Hor
 function displayAnimalInfo(){
     
    var topics = $(this).attr("data-name")
-   var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + topics + "&api_key=1cBKXxYLRE9xRI7BWIUjTB2xHdAv7KT8&limit=10";
+   var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + topics + "&api_key=1cBKXxYLRE9xRI7BWIUjTB2xHdAv7KT8&limit=10";
    console.log("displayAnimalInfo");
    console.log(queryURL);
    $.ajax({
@@ -35,13 +35,12 @@ function displayAnimalInfo(){
      animalImage.attr("data-still", results[i].images.downsized_still.url);
      animalImage.attr("data-animate", results[i].images.downsized.url);
 
-  //   console.log(results[i].images.downsized_still.url);
-     
+  //   console.log(results[i].images.downsized_still.url);  
      console.log(animalImage);
      gifDiv.append(p);
      gifDiv.append(animalImage);
          $(".gif-appear-here").prepend(gifDiv);
-    // }
+    
    } 
 })
 }
@@ -56,8 +55,6 @@ $(document).on("click", ".animal-img", function() {
   }
 
 })
-
-
    function randerButtons(){
        $("#button-view").empty()
 
@@ -69,25 +66,15 @@ $(document).on("click", ".animal-img", function() {
             a.text(animal[i]);
             $("#button-view").append(a);
             console.log(a);
-
-
        }
    }
-
      $("#add-animal").on("click",function(event){       
           event.preventDefault();
         var y = $("#animal-input").val().trim();
         animal.push(y);
         console.log(animal)
-
-
         randerButtons();
     })
-
-
-
     $(document).on("click",".gif",displayAnimalInfo);
-
     randerButtons();
-      //  submit();
  
