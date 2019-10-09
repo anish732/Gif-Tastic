@@ -28,12 +28,12 @@ function displayAnimalInfo(){
     //creating img tag
      var animalImage = $("<img>")   
      //Giving img tag src attribute from result
-     animalImage.attr("src", results[i].images.downsized_still.url);
+     animalImage.attr("src", results[i].images.fixed_height_small_still.url);
      animalImage.attr("data-state", "still");
      animalImage.attr("class","animal-img");
 
-     animalImage.attr("data-still", results[i].images.downsized_still.url);
-     animalImage.attr("data-animate", results[i].images.downsized.url);
+     animalImage.attr("data-still", results[i].images.fixed_height_small_still.url);
+     animalImage.attr("data-animate", results[i].images.fixed_height_small.url);
 
   //   console.log(results[i].images.downsized_still.url);  
      console.log(animalImage);

@@ -3,13 +3,19 @@
     padding: 1opx;
     font-size: 18px;
 }
+.gif:hover{
+    color:black;
+    background-color: darkgreen;
+    
+}
 .gif{
     margin: 12px;
     padding: 2px 8px;
     background-color: green;
     color: white;
     font-size: 16px;
-
+    border-radius: 10px;
+    
 }
 body{
     background-image: url("background.jpg");
@@ -27,4 +33,29 @@ body{
     float: right;
     width: 83px;
     font-size: 20px;
+    border-radius: 10px;
+    background-color: green;
+    color: white;
+}
+.gif-appear-here{
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+.animal-img{
+    margin : 8px;
+    padding: 8px;
+}
+
+#style {
+    margin: 10px;
+    padding: 10px;
+}
+p{
+    text-align: center;
+}
+h1{
+    color: white;
+    font-size: 30px;
+    font-weight: 200;
+    font-family: 'Abril Fatface', cursive;
 }
