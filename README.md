@@ -5,6 +5,7 @@ You can click on giphy to play and stop.
 _____
 
 To make this project have to get ***API*** key from [giphy.com](giphy.com)
+![giphy.gif](assets/giphy.gif)
 
 #### Technologis used
 * HTML
