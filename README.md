@@ -2,37 +2,45 @@
 
 Click any button and you get giphy of that animal. You can even add more animal get the giphy for them.
 You can click on giphy to play and stop.
-_____
 
-To make this project have to get ***API***
- key from [giphy.com](giphy.com)
+---
 
+To make this project have to get **_API_**
+key from [giphy.com](giphy.com)
 
 ![giphy.gif](assets/giphy.gif)
 
 #### Technologis used
-* HTML
-* css(boot strap)
-* JavaScript(JQuery)
+
+<ul>
+
+- HTML
+- css(boot strap)
+- JavaScript
+  - jQuery
+
+</ul>
+ 
 _____________
 
 #### Screeenshot:
-![](gif.png)
 
+![](gif.png)
 
 #### Code:
 
-Used $.ajax call:
+Used \$.ajax call:
 
+```
    $.ajax({
 
        url : queryURL,
-       method :"GET" 
+       method :"GET"
 
-   }).then(function(response){
+   })
+   .then(function(response){
 
     console.log(response);
    }
 
-
-
+```
