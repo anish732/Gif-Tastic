@@ -39,9 +39,12 @@ body {
   float: right;
   width: 83px;
   font-size: 20px;
-  border-radius: 10px;
-  background-color: green;
+  border-radius: 8px;
+  background-image: linear-gradient(to right bottom, #6b6b69, #129b79);
   color: white;
+}
+#add-animal:hover {
+  transform: scale(1.4);
 }
 .gif-appear-here {
   display: inline-flex;
