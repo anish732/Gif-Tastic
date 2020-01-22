@@ -44,3 +44,5 @@ Used \$.ajax call:
    }
 
 ```
+
+## Demo : [Gif-Tastic](https://anish732.github.io/Gif-Tastic/)
