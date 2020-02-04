@@ -35,6 +35,10 @@ body {
   color: white;
   margin-right: 15px;
 }
+#animal-input {
+  height: 40px;
+  width: 180px;
+}
 #add-animal {
   float: right;
   width: 83px;
